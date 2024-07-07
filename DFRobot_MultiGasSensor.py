@@ -340,7 +340,7 @@ class DFRobot_MultiGasSensor(object):
                 time.sleep(0.1)
             self.ser.readinto(recvbuf)
         else:
-            recvbuf = self.i2cbus.read_i2c_block_data(0x73, 0x11, 9)
+            recvbuf = self.i2cbus.read_i2c_block_data(0x77, 0x11, 9)
         time.sleep(0.2)
 
     def __analyse_data(self):
