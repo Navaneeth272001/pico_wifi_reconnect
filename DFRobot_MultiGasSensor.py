@@ -25,7 +25,7 @@ broker_port = 1883
 
 topic = "df_robot_gas"
 
-client = mqtt.Client()
+client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
 client.connect(hostname, broker_port, 60)
 
 client.loop_start()
