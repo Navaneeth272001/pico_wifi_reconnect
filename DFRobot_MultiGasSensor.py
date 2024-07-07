@@ -328,7 +328,7 @@ class DFRobot_MultiGasSensor(object):
         if self.__uart_i2c == UART_MODE:
             self.ser.write(sendbuf)
         else:
-            self.i2cbus.write_i2c_block_data(0x73, 0x11, sendbuf)
+            self.i2cbus.write_i2c_block_data(0x77, 0x11, sendbuf)
         time.sleep(0.2)
 
     def __recv_data(self):
