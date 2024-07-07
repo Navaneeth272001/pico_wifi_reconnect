@@ -19,7 +19,7 @@ import RPi.GPIO as GPIO
 import logging
 import paho.mqtt.client as mqtt
 
-hostname = “192.168.1.134”
+hostname = "192.168.1.134"
 broker_port = 1883
 
 
