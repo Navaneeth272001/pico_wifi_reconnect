@@ -76,7 +76,7 @@ def loop():
 
 def publish_mqtt(concentration):
     # Connect to MQTT Broker
-    client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION1)
+    client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
     client.connect(MQTT_BROKER, 1883, 60)
     # Publish gas concentration to MQTT topic
     client.publish(MQTT_TOPIC, "%.2f" % concentration)
