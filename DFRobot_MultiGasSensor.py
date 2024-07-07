@@ -26,8 +26,6 @@ broker_port = 1883
 topic = "df_robot_gas"
 client = mqtt.Client()
 
-client.on_Connect = on_connect
-Client.on_message = on_message
 client.connect(hostname, broker_port, 60)
 
 client.loop_start()
