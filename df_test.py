@@ -70,7 +70,7 @@ def loop():
     con = gas.read_gas_concentration()
     print("Ambient " + gas.gastype + " concentration: %.2f " % con + gas.gasunits + " temp: %.1fC" % gas.temp)
     # Publish gas concentration reading to MQTT broker
-    publish_mqtt(gas.read_gas_concentration())
+    publish_mqtt(int(gas.read_gas_concentration()*10))
 
     time.sleep(1)
 
