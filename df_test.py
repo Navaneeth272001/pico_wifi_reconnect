@@ -37,7 +37,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath
 from DFRobot_MultiGasSensor import *
 
 # MQTT Broker (Replace with your broker's IP address or hostname)
-MQTT_BROKER = "192.168.1.134"
+MQTT_BROKER = "192.168.1.107"
 # MQTT Topic to publish gas concentration readings
 MQTT_TOPIC = "zurich/gas"
 
