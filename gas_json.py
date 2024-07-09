@@ -85,7 +85,7 @@ def publish_mqtt(concentration, temperature):
     json_data = json.dumps(data)
     
     # Connect to MQTT Broker
-    client = mqtt.Client()
+    client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
     client.connect(MQTT_BROKER, 1883, 60)
     # Publish gas concentration to MQTT topic
     client.publish(MQTT_TOPIC, json_data)
